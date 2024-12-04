@@ -1,0 +1,104 @@
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f39c12;
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: #e74c3c;
+  transform: translateY(-2px);
+}
+
+/* User Information Styles */
+.nav-user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-user-nickname {
+  font-weight: bold;
+}
+
+.nav-user-role {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+
+  .logout-btn {
+    margin: 10px 0;
+  }
+
+  .logo h1 {
+    font-size: 28px;
+  }
+}

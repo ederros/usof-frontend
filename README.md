@@ -55,28 +55,58 @@ MAIL_HOST: SMTP host for sending emails.
 MAIL_USER: SMTP email account username.
 MAIL_PASS: SMTP email account password.
 Installation and Setup
-Manual Setup
+
+
+ 
+USOF API
+USOF API is a Node.js application that serves as a backend for a user management and content system. It includes functionality for user authentication, content creation, and management of posts, comments, and likes.
+
+Backend Installation
+Clone the repository:
+git clone https://github.com/ederros/usof.git
+cd usof
+
+Install the dependencies: npm install
+Environment Variables
+Create a .env file in the root of your project and add the following environment variables:
+
+DB_HOST=localhost DB_USER=root DB_PASSWORD=12345678 DB_NAME=usof PORT=5050 MAIL=server@gmail.com MAIL_PASS=application_password JWT_SECRET=super_secret_code
+
+Database Initialization
+To set up the database, follow these steps:
+
+Navigate to the sql folder:
+cd sql
+
+Execute the SQL initialization script via the command line:
+Use the following command:
+
+mysql -u your_username -p < db_init.sql
+
+Database EER diagram
+
+Running the Application
+To start the API server, run the following command in the root directory of your project:
+
+node app.js Your API should now be running on http://localhost:5050 or with another port what you are set in .env file.
+Start the server:
+bash
 Clone the repository:
 bash
-Копировать код
-git clone https://github.com/your-repository/usof-api.git
+ 
+git clone https://github.com/ederros/usof-frontend
 Navigate to the project directory:
 bash
-Копировать код
-cd usof-api
+ 
+cd usof
 Install dependencies:
 bash
-Копировать код
+ 
 npm install
 Configure the .env file as described in the Environment Variables section.
 Set up the database by running migrations and seeding:
 bash
-Копировать код
-npm run db:migrate
-npm run seed
-Start the server:
-bash
-Копировать код
+
 npm start
 Available Scripts
 npm start: Starts the production server.

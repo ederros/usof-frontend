@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 10;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    color: #b2b2b2;
+}
+
+.like-dislike {
+    display: flex;
+    gap: 20px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+button {
+    background-color: #4a4a4a;
+    color: rgb(247, 247, 247);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Disabled Button Styles */
+button[disabled] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Specific Button States for Like and Dislike */
+.like-btn.liked {
+    background-color: #28a745;
+}
+
+.dislike-btn.disliked {
+    background-color: #dc3545;
+}
+
+/* Loading State Styles */
+button.loading {
+    background-color: #6c757d;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Flexbox Layout for Components */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Card and Text Styles for Any Other Components */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Form and Input Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #e6e6e6;
+}
+
+p {
+    margin: 0;
+    color: #c0c0c0;
+}
+
+.dark-text {
+    color: #595959;
+}

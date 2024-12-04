@@ -1,0 +1,58 @@
+.favorites-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .favorites-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .favorites-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .favorites-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .favorites-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .favorites-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .favorites-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0073e6;
+  }
+  
+  .favorites-link:hover {
+    text-decoration: underline;
+  }
+  
+  .favorites-message {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+  }
+  

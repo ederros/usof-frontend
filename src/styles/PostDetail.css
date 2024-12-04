@@ -1,0 +1,213 @@
+/* Container for the entire post detail page */
+.post-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Container for individual post details */
+.post-detail {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Post title styling */
+.post-detail h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Styling for metadata like author and publish date */
+.post-meta {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Post content */
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Buttons for actions (favorites, delete) */
+.favorite-btn,
+.delete-btn,
+.edit-post-btn,
+.post-status-toggle button {
+    background-color: #504d5569;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+/* Hover effects for buttons */
+.favorite-btn:hover,
+.delete-btn:hover,
+.edit-post-btn:hover,
+.post-status-toggle button:hover {
+    background-color: #595959;
+}
+
+/* Styling for editing post form */
+.edit-post-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.edit-post-form input,
+.edit-post-form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.edit-post-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.edit-post-form button:hover {
+    background-color: #218838;
+}
+
+/* Comment section styles */
+.comments-section {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for new comment form */
+.new-comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.new-comment-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.new-comment-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.new-comment-form button:hover {
+    background-color: #218838;
+}
+
+/* Individual comment styles */
+.comment {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.comment p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Styling for comment actions (edit, delete) */
+.comment-actions button {
+    background-color: #454545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-actions button:hover {
+    background-color: #343434;
+}
+
+/* Styling for edit comment form */
+.edit-comment-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.edit-comment-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.edit-comment-form button:hover {
+    background-color: #218838;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Styling for the post status toggle button */
+.post-status-toggle button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-status-toggle button:hover {
+    background-color: #e0a800;
+}

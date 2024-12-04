@@ -1,0 +1,81 @@
+/* index.css */
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a global font family and smooth font rendering */
+  body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Neutral text color */
+    line-height: 1.6;
+  }
+  
+  /* Add a container for consistent spacing */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Style links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add some utility styles */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-bold {
+    font-weight: bold;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  
+  /* Add a simple header and footer style */
+  header {
+    background: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
